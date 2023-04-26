@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Title</title>
+  </head>
+  <body class="wrapper-container">
+    <div class="login-container">
+      <div class="select-container">
+        <img class="dwglobe" src="./asset/globe .png" alt="globe icon" />
+        <select class="langVal" id="language">
+          <option value="eng">English</option>
+          <option value="kr">한국어</option>
+          <option value="ch">中文</option>
+        </select>
+        <img class="dwarrow" src="./asset/down-arrow.png" alt="arrow-icon" />
+      </div>
+      <div>
+        <img class="dwlogo" src="./asset/DWlogo.png" alt="DW logo" />
+      </div>
+      <form class="loginform">
+        <div class="logininput-container">
+          <div class="logininput">
+            <div class="icon-container">
+              <img class="inputimg" src="./asset/Usericon.png" alt="" />
+            </div>
+            <input
+              type="text"
+              placeholder="Account"
+              class="loginid"
+              id="user"
+            />
+          </div>
+          <div class="logininput">
+            <div class="icon-container">
+              <img class="inputimg" src="./asset/PWicon.png" alt="" />
+            </div>
+            <input
+              type="password"
+              placeholder="Password"
+              class="loginpass"
+              id="pass"
+            />
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="loginbtn01" type="submit">
+            <span id="lgn">Login</span>
+          </div>
+          <!-- <div class="loginbtn02" type="submit">
+            <span id="vst">방문자</span>
+          </div> -->
+        </div>
+      </form>
+      <div class="version">Version 0.0.1</div>
+    </div>
+    <script>
+      function changeLanguage() {
+        const lang = {
+          kr: {
+            login: '로그인',
+            users: '계정',
+            pass: '비밀번호',
+          },
+          eng: {
+            login: 'Login',
+            users: 'Account',
+            pass: 'Password',
+          },
+          ch: { login: '登录', users: '帐户', pass: '密码' },
+        };
+        const languageSelect = document.getElementById('language');
+        const selectedLanguage = languageSelect.value;
+        const selectLang = lang[selectedLanguage];
+
+        document.getElementById('lgn').innerHTML = selectLang.login;
+        document.getElementById('user').placeholder = selectLang.users;
+        document.getElementById('pass').placeholder = selectLang.pass;
+
+        for (let i = 0; i < languageSelect.options.length; i++) {
+          const option = languageSelect.options[i];
+          option.style.display =
+            option.value === selectedLanguage ? 'none' : 'block';
+        }
+      }
+
+      window.addEventListener('load', function () {
+        const selectLang = document.getElementById('language').value;
+        document.getElementById('language').options[0].style.display =
+          selectLang === 'eng' ? 'none' : 'block';
+      });
+
+      document
+        .getElementById('language')
+        .addEventListener('change', changeLanguage);
+    </script>
+  </body>
+</html>

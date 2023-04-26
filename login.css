@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 0;
+  font-family: 'Microsoft YaHei';
+  src: url(./font/msyh.woff2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./asset/dowinn-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  font-family: 'Microsoft YaHei';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.wrapper-container {
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  width: 500px;
+  background-color: #252525;
+  flex-direction: column;
+  align-items: center;
+  opacity: 95%;
+  border-radius: 25px;
+}
+
+.dwlogo {
+  height: 230px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.logininput-container {
+  margin-bottom: 2.2vh;
+}
+
+.logininput {
+  margin-top: 35px;
+  display: flex;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom-width: 1px;
+  border-color: gray;
+}
+
+.select-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 4%;
+  margin-left: 70%;
+  border: 1px solid;
+  border-color: #fff;
+  border-radius: 14px;
+}
+
+.dwglobe {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 20px;
+}
+
+.select-container select {
+  width: 100%;
+  padding: 4px 26px;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  background-color: #252525;
+  color: white;
+  appearance: none;
+  cursor: pointer;
+}
+
+.dwarrow {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 25px;
+}
+
+.inputimg {
+  height: 25px;
+  margin-left: 2px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(0, 0, 0, 0);
+  font-size: x-large;
+  border: none;
+}
+
+input[type='password'] {
+  font-family: Verdana;
+  border: none;
+}
+
+input::placeholder {
+  font-size: large;
+  border: none;
+}
+
+.buttons {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.buttons div {
+  font-size: 27px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  height: auto;
+  background-color: #c59c62;
+  cursor: pointer;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.buttons div:hover {
+  opacity: 80%;
+}
+
+.buttons div:nth-child(1) {
+  font-weight: 600;
+}
+
+.buttons div:nth-child(2) {
+  font-weight: 800;
+  margin-top: 35px;
+  background-color: #252525;
+  border: 3px solid;
+}
+
+.dwarrow {
+  width: 16px;
+  margin-left: -20px;
+  border: none;
+}
+
+.dwglobe {
+  width: 16px;
+  margin-right: 5px;
+  border: none;
+}
+
+.loginform {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.loginid {
+  color: white;
+  border: none;
+  border: 0px;
+  outline: none;
+}
+
+.loginpass {
+  color: white;
+  border: none;
+  border: 0px;
+  outline: none;
+}
+
+.loginbtn01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 160px;
+}
+
+.version {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* Visitor button ---------------------------------------------------- */
+
+/* .loginbtn02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 100px;
+} */
+
+/* --------------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .wrapper-container {
+    padding: 0px;
+  }
+
+  .login-container {
+    width: 92%;
+    border-radius: 0px;
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dwlogo {
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .select-container {
+    margin-left: 60%;
+  }
+
+  .inputimg {
+    height: 20px;
+  }
+
+  .loginbtn01 {
+    position: relative;
+    bottom: auto;
+    margin-bottom: 30px;
+  }
+  .version {
+    margin-top: 50px;
+    margin-bottom: 6px;
+  }
+}
