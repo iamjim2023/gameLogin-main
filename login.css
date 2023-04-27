@@ -106,8 +106,9 @@ body {
 }
 
 .inputimg {
-  height: 25px;
-  margin-left: 2px;
+  height: 30px;
+  padding-bottom: 4px;
+  padding-left: 5px;
 }
 
 input {
@@ -126,40 +127,6 @@ input[type='password'] {
 input::placeholder {
   font-size: large;
   border: none;
-}
-
-.buttons {
-  font-size: 22px;
-  font-weight: 800;
-}
-
-.buttons div {
-  font-size: 27px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: 400;
-  height: auto;
-  background-color: #c59c62;
-  cursor: pointer;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.buttons div:hover {
-  opacity: 80%;
-}
-
-.buttons div:nth-child(1) {
-  font-weight: 600;
-}
-
-.buttons div:nth-child(2) {
-  font-weight: 800;
-  margin-top: 35px;
-  background-color: #252525;
-  border: 3px solid;
 }
 
 .dwarrow {
@@ -215,10 +182,38 @@ input::placeholder {
   margin-bottom: 160px;
 }
 
-.version {
-  color: #fff;
-  margin-top: 10px;
-  margin-bottom: 30px;
+.buttons {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.buttons div {
+  font-size: 27px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  height: auto;
+  background-color: #c59c62;
+  cursor: pointer;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.buttons div:hover {
+  opacity: 80%;
+}
+
+.buttons div:nth-child(1) {
+  font-weight: 600;
+}
+
+.buttons div:nth-child(2) {
+  font-weight: 800;
+  margin-top: 35px;
+  background-color: #252525;
+  border: 3px solid;
 }
 
 /* Visitor button ---------------------------------------------------- */
@@ -229,7 +224,7 @@ input::placeholder {
   align-items: center;
   padding: 10px;
   background-color: #ccc;
-  color: #333;
+  color: #fff;
   border: none;
   width: 100%;
   border-radius: 5px;
@@ -237,6 +232,12 @@ input::placeholder {
 } */
 
 /* -------------------------------------------------------------------- */
+
+.version {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
 @media screen and (max-width: 600px) {
   body {
@@ -286,7 +287,9 @@ input::placeholder {
   }
 
   .inputimg {
-    height: 20px;
+    height: 30px;
+    padding-bottom: 4px;
+    padding-left: 1px;
   }
 
   .loginbtn01 {
