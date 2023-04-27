@@ -21,7 +21,6 @@ body {
   background-position: center;
   justify-content: center;
   font-family: 'Microsoft YaHei';
-  height: 100%;
   width: 100%;
   position: fixed;
 }
@@ -298,5 +297,8 @@ input::placeholder {
   .version {
     margin-top: 50px;
     margin-bottom: 6px;
+  }
+  .dwglobe {
+    margin-top: 0.5px;
   }
 }
