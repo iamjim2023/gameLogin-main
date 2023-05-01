@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8===================D</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      /* Optional styles to make the arrow icon look clickable */
+      #arrow-toggle {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="select-container">
+      <img class="dwglobe" src="./asset/globe .png" alt="globe icon" />
+      <select class="langVal" id="language">
+        <option value="eng">English</option>
+        <option value="kr">한국어</option>
+        <option value="ch">中文</option>
+      </select>
+      <img
+        class="dwarrow"
+        src="./asset/down-arrow.png"
+        alt="arrow-icon"
+        style="background-color: black"
+        id="arrow-toggle"
+      />
+    </div>
+    <script>
+      $(document).ready(function () {
+        // Hide the select element initially
+        $('#language').hide();
+
+        // When the arrow icon is clicked, toggle the select element
+        $('#arrow-toggle').click(function () {
+          $('#language').toggle();
+        });
+      });
+    </script>
+  </body>
+</html>

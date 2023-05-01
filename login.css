@@ -75,10 +75,10 @@ body {
 
 .dwglobe {
   position: absolute;
-  top: 48%;
-  left: 4px;
+  top: 48.5%;
+  left: 3px;
   transform: translateY(-50%);
-  width: 30px;
+  width: 20px;
   height: 20px;
 }
 
@@ -103,6 +103,7 @@ body {
   transform: translateY(-50%);
   width: 20px;
   height: 25px;
+  cursor: pointer;
 }
 
 .inputimg {
@@ -126,18 +127,6 @@ input[type='password'] {
 
 input::placeholder {
   font-size: large;
-  border: none;
-}
-
-.dwarrow {
-  width: 16px;
-  margin-left: -18px;
-  border: none;
-}
-
-.dwglobe {
-  width: 18px;
-  margin-right: 5px;
   border: none;
 }
 
