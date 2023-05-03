@@ -60,13 +60,13 @@
           <div class="loginbtn01" type="submit">
             <span id="lgn">Login</span>
           </div>
-          <!-- <div class="loginbtn02" type="submit">
-            <span id="vst">Visitors</span>
-          </div> -->
         </div>
       </form>
       <div class="version">Version 0.0.1</div>
     </div>
+    <!-- <div class="loginbtn02" type="submit">
+            <span id="vst">Visitors</span>
+          </div> -->
     <script>
       function changeLanguage() {
         const lang = {
@@ -104,6 +104,19 @@
           selectLang === 'eng' ? 'none' : 'block';
       });
 
+      const loginButton = document.querySelector('.loginbtn01');
+      loginButton.addEventListener('click', function () {
+        window.location.href = 'testPages.html';
+      });
+
+      // Function once the user click the enter the Login button will trigger.
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+          const loginButton = document.querySelector('.loginbtn01');
+          loginButton.click();
+        }
+      });
+      // -------------------------------------------------------------------
       document
         .getElementById('language')
         .addEventListener('change', changeLanguage);
